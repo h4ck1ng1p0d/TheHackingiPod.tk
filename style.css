@@ -313,25 +313,27 @@ table td { border: 1px solid #e8e8e8; }
 
 /* Download Page */
 
-.download_box {
-    height: 150px;
-    padding: 30px 0 30px 0; /* top > left > bottom > right */
-    /*border: 2px solid #000;*/
-    text-align: center;
-    margin: 20px 0 20px 0;
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    position: relative;
 }
 
-.download_link,
-.download_link:hover,
-.download_link:visited {
-    background-color: #FFF; /* Green */
-    border: 2px solid #00000093;
-    color: #000;
-    padding: 15px 32px;
+.flex-container_temp {
+    display: inline;
+    justify-content: center;
+    position: relative;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    margin: 50px
 }
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* The End of the Internet Page */
