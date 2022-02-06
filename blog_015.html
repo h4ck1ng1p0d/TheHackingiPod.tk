@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TheHackingiPod | Hacking the World</title>
+    <meta name="generator" content="Bluefish 2.2.12">
+    <meta property="og:title" content="TheHackingiPod">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Hacking the World /&gt;
+&lt;meta property=" og:description "=" " canonical"="" href="https://thehackingipod.tk">
+    <meta property="og:url" content="https://thehackingipod.tk">
+    <meta property="og:site_name" content="TheHackingiPod">
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="TheHackingiPod">
+    <script type="application/ld+json">
+        {"headline":"TheHackingiPod","description":"Hacking the World,"url":"https://hackingipod.tk","name":"TheHackingiPod","@type":"WebSite","@context":"https://schema.org"}
+    </script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://thehackingipod.tk/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://thehackingipod.tk/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://thehackingipod.tk/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://thehackingipod.tk/favicons/site.webmanifest">
+    <link rel="mask-icon" href="https://thehackingipod.tk/favicons/safari-pinned-tab.svg" color="#a59a42">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#000000">
+    <!---->
+    <!---->
+    <link rel="stylesheet" href="https://thehackingipod.tk/style.css">
+    <link type="application/atom+xml" rel="alternate" href="https://thehackingipod.tk/feed.xml" title="TheHackingiPod">
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+
+        <div class="wrapper"><a class="site-title" rel="author" href="https://thehackingipod.tk/">TheHackingiPod.tk</a>
+            <nav class="site-nav">
+                <input type="checkbox" id="nav-trigger" class="nav-trigger">
+                <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+                <div class="trigger"><a class="page-link" href="https://thehackingipod.tk/download.html">Download</a>
+                    <!----><a class="page-link" href="https://thehackingipod.tk/about.html">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Formatting -->
+
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            <article class="post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+                <header class="post-header">
+                    <h1 class="post-title p-name" itemprop="name headline">Windows 10 Encryption Sucks!!</h1>
+                    <p class="post-meta">
+                        <time class="dt-published" datetime="2021-07-11T00:00:00-07:00" itemprop="datePublished">Feb 6th, 2022</time></p>
+                </header>
+                <!-- Title and date -->
+
+                <!-- Text <p> -->
+
+                <p>I recently got a call from a friend telling me that she got locked out of her Windows 10 machine.<br> And after doing some research i’ve found that resetting your windows 10 password is pretty f*cking easy.<br> Here’s a couple of ways:</p>
+
+                <p><b>How to reset the password on windows 10 (MS account)</b>
+                    <ol>
+                        <li>go to <a class="page-link" href="https://account.live.com/password/reset">https://account.live.com/password/reset</a></li>
+                        <li>Enter your account email you used</li>
+                        <li>Enter new password</li>
+                        <li>Try again loging in</li>
+                    </ol>
+                </p>
+
+                <br>
+
+                <p>
+                    <b>How to reset the password on windows 10 (local acccount)</b><br> Using Recovery Mode (This doesn't work on all machines, if it doesn't move to the next method)
+                    <ol>
+                        <li>On the login screen --> Recovery mode <code>Shift + Reboot</code></li>
+                        <li>Once a blue screen appears then click on <code>Troubleshoot</code></li>
+                        <li>Next, <code>Advanced Options</code></li>
+                        <li>Then, Command Prompt (CMD)</li>
+                        <li>Locate disk, enter <code>DISKPART</code></li>
+                        <li>then exit and enter (disk letter):</li>
+                        <li>change directory <code>cd C:\Windows\System32\</code></li>
+                        <li>backup utilman.exe & cmd.exe --> <code>copy utilman.exe utilman1.exe</code> & <code>copy cmd.exe cmd1.exe</code></li>
+                        <li>Next, delete cmd.exe <code>del cmd.exe</code></li>
+                        <li>renaming <code>rename cmd.exe utilman.exe</code></li>
+                        <li>Reboot your system</li>
+                        <li>Enter the login screen and in the right bottom corner, click on the 'narrator' and your cmd.exe should open.</li>
+                        <li>Enter this command: <code>net user</code> (list users)</li>
+                        <li>Enter these commands below: <code>net user *Username* *NewPassword*</code></li>
+                        <li>Login in your Account</li>
+                    </ol>
+                </p>
+
+                <br>
+
+                <p>
+                    <b>How to reset the password on windows 10 (local acccount)</b><br> Using Installation Media
+                    <ol>
+                        <li>Boot into the installation media</li>
+                        <li>Boot + F2, F5, F7, F8, F10, F12 or delete</li>
+                        <li>Once entered press <code>shift + F10</code> or <code>Next + Repair My Computer</code> to open Command Prompt</li>
+                        <li>Enter this command: <code>net user</code> (list users)</li>
+                        <li>Enter these commands below: <code>net user *Username* *NewPassword*</code></li>
+                        <li>Login in your Account</li>
+                    </ol>
+
+                </p>
+
+                <br>
+
+                <p>
+                    <b>How to reset the password on windows 10 (local acccount)</b><br> Using build-in Administrator Account
+                    <ol>
+                        <li>Boot in Recovery Mode or Installation Media</li>
+                        <li>Open Command Prompt (CMD)</li>
+                        <li>Enter this command: <code>net user administrator /active:yes</code></li>
+                        <li>Reboot your Machine</li>
+                        <li>Login as Administrator</li>
+                    </ol>
+                </p>
+
+                <hr>
+                <br>
+
+                <p>
+                    <b>5 ways to reset/change your password</b>
+                    <ol>
+                        <li>Open Control panel --> User Accounts --> Click *user* --> Click 'change password' --> enter new password</li>
+                        <br>
+                        <b><i>* This Only works if you remember the previous password *</i></b>
+                        <li>Settings --> Accounts --> Sign-in Option --> Click 'change' --> enter new password</li><br>
+                        <li>Open up Computer Management --> Local Users and Groups --> Users --> Right Click *User* <br>--> Click Proceed (If popup is shown) --> Enter new password</li><br>
+                        <li>GUI + r --> enter <code>netplwiz</code> --> Choose User --> Click Reset Password --> Enter new password</li>
+                        <li>Using Command Prompt --> READ PREVIOUS METHODS</li>
+                    </ol>
+                </p>
+
+                <hr>
+                <br>
+
+                <p>
+                    After trying out these methods I’ve concluded that your windows 10 machine hasn’t got a good encryption because it can be cracked in a couple of minutes. This can be used on a ducky script to speed it up the cracking procedure.
+                </p>
+
+            </article>
+
+        </div>
+    </main>
+    <!-- Footer Start -->
+    <footer class="site-footer h-card">
+        <data class="u-url" href="/blog/"></data>
+
+        <div class="wrapper">
+
+            <h2 class="footer-heading">TheHackingiPod</h2>
+
+            <div class="footer-col-wrapper">
+                <div class="footer-col footer-col-1">
+                    <ul class="contact-list">
+                        <li class="p-name">TheHackingiPod</li>
+                        <li><a class="u-email" href="mailto:hackingipod@protonmail.com">contact@thehackingipod.tk</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-col-2">
+                    <ul class="social-media-list">
+                        <li><a href="https://github.com/HackingiPod"><svg class="svg-icon"><use xlink:href="/social-links.svg#github"></use></svg> <span class="username">HackingiPod</span></a></li>
+                        <li><a href="https://twitter.com/hackingipod1738"><svg class="svg-icon"><use xlink:href="/social-links.svg#twitter"></use></svg><span class="username">thehackingipod</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-col-3">
+                    <p>© 2021 TheHackingiPod.tk <br> All rights reserved.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer end -->
+
+</body>
+
+</html>
